@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "supported_formats": [
+      15,
+      84
+    ],
+    "min_format": 15,
+    "max_format": 84,
+    "description": [
+      {
+        "text": "ItemRarityUnderlays 1.21.11"
+      },
+      {
+        "text": " [v1.0] By Linevalt_XolotI"
+      }
+    ]
+  }
+}
