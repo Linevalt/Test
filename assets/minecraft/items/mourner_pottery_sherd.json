@@ -1,0 +1,282 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "minecraft:item/mourner_pottery_sherd"
+      },
+      {
+        "type": "minecraft:select",
+        "property": "minecraft:display_context",
+        "cases": [
+          {
+            "when": "ground",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:component",
+              "component": "minecraft:rarity",
+              "cases": [
+                {
+                  "when": "common",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "underlays/ground",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 16777215
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "uncommon",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "underlays/ground",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 16777045
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "rare",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "underlays/ground",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 5636095
+                      }
+                    ]
+                  }
+                },
+                {
+                  "when": "epic",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "underlays/ground",
+                    "tints": [
+                      {
+                        "type": "minecraft:constant",
+                        "value": 16733695
+                      }
+                    ]
+                  }
+                }
+              ],
+              "fallback": {
+                "type": "minecraft:empty"
+              }
+            }
+          },
+          {
+            "when": "gui",
+            "model": {
+              "type": "minecraft:condition",
+              "property": "minecraft:carried",
+              "on_true": {
+                "type": "minecraft:select",
+                "property": "minecraft:component",
+                "component": "minecraft:rarity",
+                "cases": [
+                  {
+                    "when": "common",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "underlays/carried",
+                      "tints": [
+                        {
+                          "type": "minecraft:constant",
+                          "value": 16777215
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "when": "uncommon",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "underlays/carried",
+                      "tints": [
+                        {
+                          "type": "minecraft:constant",
+                          "value": 16777045
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "when": "rare",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "underlays/carried",
+                      "tints": [
+                        {
+                          "type": "minecraft:constant",
+                          "value": 5636095
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "when": "epic",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "underlays/carried",
+                      "tints": [
+                        {
+                          "type": "minecraft:constant",
+                          "value": 16733695
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "fallback": {
+                  "type": "minecraft:empty"
+                }
+              },
+              "on_false": {
+                "type": "minecraft:condition",
+                "property": "minecraft:selected",
+                "on_true": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:component",
+                  "component": "minecraft:rarity",
+                  "cases": [
+                    {
+                      "when": "common",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/selected",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16777215
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "uncommon",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/selected",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16777045
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "rare",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/selected",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 5636095
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "epic",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/selected",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16733695
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:empty"
+                  }
+                },
+                "on_false": {
+                  "type": "minecraft:select",
+                  "property": "minecraft:component",
+                  "component": "minecraft:rarity",
+                  "cases": [
+                    {
+                      "when": "common",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/underlays",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16777215
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "uncommon",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/underlays",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16777045
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "rare",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/underlays",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 5636095
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "when": "epic",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "underlays/underlays",
+                        "tints": [
+                          {
+                            "type": "minecraft:constant",
+                            "value": 16733695
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "fallback": {
+                    "type": "minecraft:empty"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "fallback": {
+          "type": "minecraft:empty"
+        }
+      }
+    ]
+  }
+}
